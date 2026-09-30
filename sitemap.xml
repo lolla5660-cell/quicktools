@@ -1,6 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://lolla5660-cell.github.io/quicktools/</loc>
   </url>
+
+  <url>
+    <loc>https://lolla5660-cell.github.io/quicktools/about.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lolla5660-cell.github.io/quicktools/age-calculator.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lolla5660-cell.github.io/quicktools/case-converter.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lolla5660-cell.github.io/quicktools/celsius-fahrenheit.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lolla5660-cell.github.io/quicktools/cm-to-inches.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lolla5660-cell.github.io/quicktools/discount-calculator.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lolla5660-cell.github.io/quicktools/duplicate-lines.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lolla5660-cell.github.io/quicktools/gpa-calculator.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lolla5660-cell.github.io/quicktools/grade-calculator.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lolla5660-cell.github.io/quicktools/inches-to-cm.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lolla5660-cell.github.io/quicktools/kg-to-lbs.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lolla5660-cell.github.io/quicktools/lbs-to-kg.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lolla5660-cell.github.io/quicktools/percentage-calculator.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lolla5660-cell.github.io/quicktools/privacy.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lolla5660-cell.github.io/quicktools/terms.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lolla5660-cell.github.io/quicktools/tip-calculator.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lolla5660-cell.github.io/quicktools/unit-converter.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lolla5660-cell.github.io/quicktools/word-counter.html</loc>
+  </url>
+
 </urlset>
