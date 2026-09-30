@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Remove Duplicate Lines | QuickTools</title><meta name="description" content="Remove duplicate lines from text while keeping the first occurrence of each line."><link rel="stylesheet" href="styles.css"></head><body><header><div class="wrap nav"><a class="brand" href="index.html">Quick<span>Tools</span></a><nav><a href="index.html#calculators">Calculators</a><a href="index.html#text">Text</a><a href="index.html#converters">Converters</a></nav></div></header><main><section class="wrap section" style="padding-top:55px"><p class="eyebrow">FREE ONLINE TOOL</p><h1>Remove Duplicate Lines</h1><p style="color:#697589">Remove repeated lines while keeping the first occurrence.</p><div style="background:#fff;border:1px solid #e5e9f0;border-radius:18px;padding:24px;max-width:760px;margin-top:25px"><textarea id="x" rows="12" placeholder="One item per line..." style="width:100%;padding:14px;border:1px solid #dbe1eb;border-radius:10px;font-size:16px"></textarea><br><br><button onclick="c()" style="padding:13px 18px;border:0;border-radius:10px;background:#4f46e5;color:#fff;font-weight:700;cursor:pointer">Remove Duplicates</button><div id="r" style="margin-top:16px;padding:14px;border-radius:10px;background:#f1f3ff;font-weight:700"></div></div><script>function c(){
+  const x=document.getElementById("x");
+  const lines=x.value.split(/\r?\n/);
+  const seen=new Set();
+  const output=[];
+  for(const line of lines){
+    const key=line.trim();
+    if(key && !seen.has(key)){
+      seen.add(key);
+      output.push(line);
+    }
+  }
+  x.value=output.join("\n");
+  document.getElementById("r").textContent=`${lines.filter(v=>v.trim()).length} non-empty lines → ${output.length} unique lines.`;
+}</script></section><section class="seo-content wrap"><h2>About the Remove Duplicate Lines</h2><p>Paste a list into the tool to remove repeated lines. This can help clean copied lists, names, URLs, tags or other line-by-line text.</p><p>The tool keeps the first occurrence and removes later duplicates while preserving the original order.</p><h2>Frequently Asked Question</h2><h3>Does it keep the original order?</h3><p>Yes. The first occurrence of each line is kept in its original position.</p></section></main><footer class="site-footer"><div class="wrap footer-inner"><div><strong>QuickTools</strong><p>Free online tools for everyday tasks.</p></div><div class="footer-links"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div><div class="wrap copyright">© 2026 QuickTools. All rights reserved.</div></footer></body></html>
