@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Compound Interest Calculator | QuickTools</title>
-  <meta name="description" content="Use this free compound interest calculator to estimate how your money can grow with an initial investment, regular contributions, interest rate and compounding frequency.">
+  <meta name="description" content="Use this free compound interest calculator to estimate how your savings or investment can grow with an initial investment, regular contributions, interest rate and compounding frequency.">
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -36,6 +36,7 @@
   <div class="panel">
 
     <div class="row">
+
       <input
         id="initial"
         type="number"
@@ -53,9 +54,11 @@
         placeholder="Monthly contribution"
         aria-label="Monthly contribution"
       >
+
     </div>
 
     <div class="row">
+
       <input
         id="rate"
         type="number"
@@ -73,11 +76,15 @@
         placeholder="Years"
         aria-label="Number of years"
       >
+
     </div>
 
     <div class="row">
 
-      <select id="frequency" aria-label="Compounding frequency">
+      <select
+        id="frequency"
+        aria-label="Compounding frequency"
+      >
         <option value="1">Annually</option>
         <option value="2">Semi-annually</option>
         <option value="4">Quarterly</option>
@@ -95,9 +102,14 @@
       Clear
     </button>
 
-    <div id="result" class="result" aria-live="polite"></div>
+    <div
+      id="result"
+      class="result"
+      aria-live="polite"
+    ></div>
 
   </div>
+
 
   <section class="seo-content">
 
@@ -105,23 +117,31 @@
 
     <p>
       Compound interest is interest earned on both your original principal
-      and the interest that has accumulated over time. This can allow money
-      to grow faster as interest is added to the balance and can itself earn
-      additional interest.
+      and the interest that has accumulated over time. Because previously
+      earned interest can also earn interest, compound growth can become
+      more significant as time passes.
     </p>
+
 
     <h2>How to Use the Compound Interest Calculator</h2>
 
     <p>
       Enter your initial investment, monthly contribution, estimated annual
-      interest rate and investment period. Then choose how often the interest
-      is compounded and select Calculate.
+      interest rate and investment period. Then choose how frequently the
+      interest is compounded and select Calculate.
     </p>
+
+    <p>
+      The calculator estimates your future balance based on the information
+      you provide. You can also use the Clear button to start a new
+      calculation.
+    </p>
+
 
     <h2>Compound Interest Formula</h2>
 
     <p>
-      For a single initial investment with periodic compounding, the basic
+      For an initial investment with periodic compounding, the standard
       compound interest formula is:
     </p>
 
@@ -130,33 +150,57 @@
     </p>
 
     <p>
-      In this formula, A is the final amount, P is the initial principal,
-      r is the annual interest rate expressed as a decimal, n is the number
-      of compounding periods per year, and t is the number of years.
+      In this formula, <strong>A</strong> represents the final amount,
+      <strong>P</strong> is the initial principal,
+      <strong>r</strong> is the annual interest rate expressed as a decimal,
+      <strong>n</strong> is the number of compounding periods per year,
+      and <strong>t</strong> is the number of years.
     </p>
 
     <p>
-      This calculator also accounts for regular monthly contributions,
-      making it useful for estimating the effect of consistent saving or
-      investing over time.
+      When regular contributions are made, the calculation also considers
+      those additional deposits over the investment period.
     </p>
 
-    <h2>Example</h2>
+
+    <h2>Example of Compound Interest</h2>
 
     <p>
       Suppose you start with $1,000, contribute $100 each month, earn an
-      estimated 5% annual interest rate, and leave the money invested for
-      10 years. The calculator can estimate your ending balance and show
-      how much came from your contributions versus growth.
+      estimated annual interest rate of 5%, and keep the money invested for
+      10 years. The calculator can estimate your ending balance, total
+      contributions and estimated interest earned.
     </p>
+
 
     <h2>Compound Interest vs. Simple Interest</h2>
 
     <p>
-      With simple interest, interest is generally calculated only on the
-      original principal. With compound interest, previously earned interest
-      is added to the balance and can earn additional interest.
+      Simple interest is generally calculated only on the original principal.
+      Compound interest, on the other hand, allows previously earned interest
+      to become part of the balance that can earn additional interest.
     </p>
+
+    <p>
+      Over longer periods, this difference can become substantial, especially
+      when interest is compounded regularly and additional contributions are
+      made.
+    </p>
+
+
+    <h2>Why Does Compounding Frequency Matter?</h2>
+
+    <p>
+      Compounding frequency determines how often interest is added to the
+      balance. Depending on the account or investment, interest may be
+      compounded annually, semi-annually, quarterly, monthly or daily.
+    </p>
+
+    <p>
+      More frequent compounding can produce a different result because
+      interest is added to the balance at different intervals.
+    </p>
+
 
     <h2>Frequently Asked Questions</h2>
 
@@ -164,27 +208,47 @@
 
     <p>
       Compound interest is interest calculated on the original amount plus
-      accumulated interest.
+      accumulated interest from previous periods.
     </p>
+
+
+    <h3>What is the difference between compound and simple interest?</h3>
+
+    <p>
+      Simple interest is generally calculated using the original principal,
+      while compound interest also considers accumulated interest.
+    </p>
+
 
     <h3>How often can interest be compounded?</h3>
 
     <p>
-      Interest may be compounded annually, semi-annually, quarterly,
-      monthly or daily depending on the account or investment.
+      Interest can be compounded at different frequencies, including
+      annually, semi-annually, quarterly, monthly or daily.
     </p>
+
 
     <h3>Does this calculator guarantee investment returns?</h3>
 
     <p>
-      No. The results are estimates based on the values you enter. Actual
-      investment returns can vary and may be affected by fees, taxes,
-      market conditions and other factors.
+      No. The results are estimates based on the values entered. Actual
+      savings or investment returns can vary because of market conditions,
+      fees, taxes, account terms and other factors.
+    </p>
+
+
+    <h3>Can I add money every month?</h3>
+
+    <p>
+      Yes. Enter the amount you expect to contribute each month in the
+      Monthly contribution field. The calculator includes those contributions
+      when estimating the future balance.
     </p>
 
   </section>
 
 </main>
+
 
 <footer class="site-footer">
 
@@ -209,6 +273,7 @@
 
 </footer>
 
+
 <script>
 
 const initialInput = document.getElementById("initial");
@@ -221,7 +286,7 @@ const result = document.getElementById("result");
 document.getElementById("calculate").addEventListener("click", () => {
 
   const principal = parseFloat(initialInput.value);
-  const monthly = parseFloat(monthlyInput.value) || 0;
+  const monthlyContribution = parseFloat(monthlyInput.value) || 0;
   const annualRate = parseFloat(rateInput.value);
   const years = parseFloat(yearsInput.value);
   const frequency = parseInt(frequencyInput.value, 10);
@@ -232,61 +297,135 @@ document.getElementById("calculate").addEventListener("click", () => {
     !Number.isFinite(annualRate) ||
     annualRate < 0 ||
     !Number.isFinite(years) ||
-    years <= 0
+    years <= 0 ||
+    monthlyContribution < 0
   ) {
+
     result.textContent =
-      "Enter a valid initial investment, interest rate and number of years.";
+      "Enter valid values for all required fields.";
+
     return;
   }
 
-  const rate = annualRate / 100;
-  const periods = years * frequency;
 
-  const compoundFactor =
-    Math.pow(1 + rate / frequency, periods);
+  const annualRateDecimal = annualRate / 100;
 
-  const initialGrowth =
-    principal * compoundFactor;
+  /*
+   * The calculation is simulated month by month.
+   *
+   * This allows the calculator to account for:
+   * - Initial investment
+   * - Monthly contributions
+   * - Different compounding frequencies
+   * - Investment duration
+   */
 
-  let contributionGrowth = 0;
+  const totalMonths = Math.round(years * 12);
 
-  if (monthly > 0) {
+  let balance = principal;
 
-    const totalMonths = Math.round(years * 12);
 
-    const monthlyRate = rate / 12;
+  /*
+   * For a zero-interest scenario, the result is simply
+   * the initial investment plus all monthly contributions.
+   */
 
-    if (monthlyRate === 0) {
+  if (annualRateDecimal === 0) {
 
-      contributionGrowth = monthly * totalMonths;
+    balance =
+      principal +
+      monthlyContribution * totalMonths;
 
-    } else {
+  } else {
 
-      contributionGrowth =
-        monthly *
-        ((Math.pow(1 + monthlyRate, totalMonths) - 1) /
-        monthlyRate);
+    /*
+     * Convert the selected annual rate into the periodic
+     * rate for the selected compounding frequency.
+     */
 
-      contributionGrowth *=
-        Math.pow(
-          1 + rate / frequency,
-          Math.max(0, periods - totalMonths)
+    const periodicRate =
+      annualRateDecimal / frequency;
+
+    /*
+     * Track elapsed time in years so interest is applied
+     * whenever a compounding period is completed.
+     */
+
+    let previousCompletedPeriods = 0;
+
+    for (let month = 1; month <= totalMonths; month++) {
+
+      /*
+       * Add the monthly contribution at the beginning
+       * of each month.
+       */
+
+      balance += monthlyContribution;
+
+      const elapsedYears = month / 12;
+
+      const completedPeriods =
+        Math.floor(elapsedYears * frequency);
+
+      const periodsToApply =
+        completedPeriods - previousCompletedPeriods;
+
+      if (periodsToApply > 0) {
+
+        balance *= Math.pow(
+          1 + periodicRate,
+          periodsToApply
         );
+
+        previousCompletedPeriods =
+          completedPeriods;
+      }
+
     }
+
+    /*
+     * If the selected period ends before the next full
+     * compounding date, the remaining fractional period
+     * is handled proportionally using the effective rate.
+     */
+
+    const completedYears =
+      previousCompletedPeriods / frequency;
+
+    const remainingYears =
+      years - completedYears;
+
+    if (remainingYears > 0) {
+
+      const effectiveAnnualRate =
+        Math.pow(
+          1 + periodicRate,
+          frequency
+        ) - 1;
+
+      balance *= Math.pow(
+        1 + effectiveAnnualRate,
+        remainingYears
+      );
+
+    }
+
   }
 
-  const finalBalance =
-    initialGrowth + contributionGrowth;
 
   const totalContributions =
-    principal + (monthly * Math.round(years * 12));
+    principal +
+    monthlyContribution * totalMonths;
 
   const estimatedInterest =
-    finalBalance - totalContributions;
+    balance -
+    totalContributions;
+
 
   result.innerHTML =
+
     "<strong>Estimated final balance: $" +
-    finalBalance.toLocaleString(undefined, {
+    balance.toLocaleString(undefined, {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2
     }) +
@@ -307,13 +446,16 @@ document.getElementById("calculate").addEventListener("click", () => {
 
 });
 
+
 document.getElementById("clear").addEventListener("click", () => {
 
   initialInput.value = "";
   monthlyInput.value = "";
   rateInput.value = "";
   yearsInput.value = "";
+
   frequencyInput.value = "12";
+
   result.textContent = "";
 
 });
