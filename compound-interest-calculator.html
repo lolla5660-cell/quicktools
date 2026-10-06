@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Compound Interest Calculator | QuickTools</title>
+  <meta name="description" content="Use this free compound interest calculator to estimate how your money can grow with an initial investment, regular contributions, interest rate and compounding frequency.">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Quick<span>Tools</span></a>
+
+    <nav>
+      <a href="index.html#calculators">Calculators</a>
+      <a href="index.html#text">Text</a>
+      <a href="index.html#converters">Converters</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap tool">
+
+  <h1>Compound Interest Calculator</h1>
+
+  <p>
+    Estimate how your savings or investment could grow over time with
+    compound interest and regular contributions.
+  </p>
+
+  <div class="panel">
+
+    <div class="row">
+      <input
+        id="initial"
+        type="number"
+        min="0"
+        step="0.01"
+        placeholder="Initial investment"
+        aria-label="Initial investment"
+      >
+
+      <input
+        id="monthly"
+        type="number"
+        min="0"
+        step="0.01"
+        placeholder="Monthly contribution"
+        aria-label="Monthly contribution"
+      >
+    </div>
+
+    <div class="row">
+      <input
+        id="rate"
+        type="number"
+        min="0"
+        step="0.01"
+        placeholder="Annual interest rate (%)"
+        aria-label="Annual interest rate"
+      >
+
+      <input
+        id="years"
+        type="number"
+        min="0.1"
+        step="0.1"
+        placeholder="Years"
+        aria-label="Number of years"
+      >
+    </div>
+
+    <div class="row">
+
+      <select id="frequency" aria-label="Compounding frequency">
+        <option value="1">Annually</option>
+        <option value="2">Semi-annually</option>
+        <option value="4">Quarterly</option>
+        <option value="12" selected>Monthly</option>
+        <option value="365">Daily</option>
+      </select>
+
+    </div>
+
+    <button type="button" id="calculate">
+      Calculate
+    </button>
+
+    <button type="button" id="clear">
+      Clear
+    </button>
+
+    <div id="result" class="result" aria-live="polite"></div>
+
+  </div>
+
+  <section class="seo-content">
+
+    <h2>What Is Compound Interest?</h2>
+
+    <p>
+      Compound interest is interest earned on both your original principal
+      and the interest that has accumulated over time. This can allow money
+      to grow faster as interest is added to the balance and can itself earn
+      additional interest.
+    </p>
+
+    <h2>How to Use the Compound Interest Calculator</h2>
+
+    <p>
+      Enter your initial investment, monthly contribution, estimated annual
+      interest rate and investment period. Then choose how often the interest
+      is compounded and select Calculate.
+    </p>
+
+    <h2>Compound Interest Formula</h2>
+
+    <p>
+      For a single initial investment with periodic compounding, the basic
+      compound interest formula is:
+    </p>
+
+    <p>
+      <strong>A = P(1 + r/n)<sup>nt</sup></strong>
+    </p>
+
+    <p>
+      In this formula, A is the final amount, P is the initial principal,
+      r is the annual interest rate expressed as a decimal, n is the number
+      of compounding periods per year, and t is the number of years.
+    </p>
+
+    <p>
+      This calculator also accounts for regular monthly contributions,
+      making it useful for estimating the effect of consistent saving or
+      investing over time.
+    </p>
+
+    <h2>Example</h2>
+
+    <p>
+      Suppose you start with $1,000, contribute $100 each month, earn an
+      estimated 5% annual interest rate, and leave the money invested for
+      10 years. The calculator can estimate your ending balance and show
+      how much came from your contributions versus growth.
+    </p>
+
+    <h2>Compound Interest vs. Simple Interest</h2>
+
+    <p>
+      With simple interest, interest is generally calculated only on the
+      original principal. With compound interest, previously earned interest
+      is added to the balance and can earn additional interest.
+    </p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>What is compound interest?</h3>
+
+    <p>
+      Compound interest is interest calculated on the original amount plus
+      accumulated interest.
+    </p>
+
+    <h3>How often can interest be compounded?</h3>
+
+    <p>
+      Interest may be compounded annually, semi-annually, quarterly,
+      monthly or daily depending on the account or investment.
+    </p>
+
+    <h3>Does this calculator guarantee investment returns?</h3>
+
+    <p>
+      No. The results are estimates based on the values you enter. Actual
+      investment returns can vary and may be affected by fees, taxes,
+      market conditions and other factors.
+    </p>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+
+  <div class="wrap footer-inner">
+
+    <div>
+      <strong>QuickTools</strong>
+      <p>Free online tools for everyday tasks.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+
+  </div>
+
+  <div class="wrap copyright">
+    © 2026 QuickTools. All rights reserved.
+  </div>
+
+</footer>
+
+<script>
+
+const initialInput = document.getElementById("initial");
+const monthlyInput = document.getElementById("monthly");
+const rateInput = document.getElementById("rate");
+const yearsInput = document.getElementById("years");
+const frequencyInput = document.getElementById("frequency");
+const result = document.getElementById("result");
+
+document.getElementById("calculate").addEventListener("click", () => {
+
+  const principal = parseFloat(initialInput.value);
+  const monthly = parseFloat(monthlyInput.value) || 0;
+  const annualRate = parseFloat(rateInput.value);
+  const years = parseFloat(yearsInput.value);
+  const frequency = parseInt(frequencyInput.value, 10);
+
+  if (
+    !Number.isFinite(principal) ||
+    principal < 0 ||
+    !Number.isFinite(annualRate) ||
+    annualRate < 0 ||
+    !Number.isFinite(years) ||
+    years <= 0
+  ) {
+    result.textContent =
+      "Enter a valid initial investment, interest rate and number of years.";
+    return;
+  }
+
+  const rate = annualRate / 100;
+  const periods = years * frequency;
+
+  const compoundFactor =
+    Math.pow(1 + rate / frequency, periods);
+
+  const initialGrowth =
+    principal * compoundFactor;
+
+  let contributionGrowth = 0;
+
+  if (monthly > 0) {
+
+    const totalMonths = Math.round(years * 12);
+
+    const monthlyRate = rate / 12;
+
+    if (monthlyRate === 0) {
+
+      contributionGrowth = monthly * totalMonths;
+
+    } else {
+
+      contributionGrowth =
+        monthly *
+        ((Math.pow(1 + monthlyRate, totalMonths) - 1) /
+        monthlyRate);
+
+      contributionGrowth *=
+        Math.pow(
+          1 + rate / frequency,
+          Math.max(0, periods - totalMonths)
+        );
+    }
+  }
+
+  const finalBalance =
+    initialGrowth + contributionGrowth;
+
+  const totalContributions =
+    principal + (monthly * Math.round(years * 12));
+
+  const estimatedInterest =
+    finalBalance - totalContributions;
+
+  result.innerHTML =
+    "<strong>Estimated final balance: $" +
+    finalBalance.toLocaleString(undefined, {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    }) +
+    "</strong><br><br>" +
+
+    "Total contributions: $" +
+    totalContributions.toLocaleString(undefined, {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    }) +
+    "<br>" +
+
+    "Estimated interest earned: $" +
+    estimatedInterest.toLocaleString(undefined, {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    });
+
+});
+
+document.getElementById("clear").addEventListener("click", () => {
+
+  initialInput.value = "";
+  monthlyInput.value = "";
+  rateInput.value = "";
+  yearsInput.value = "";
+  frequencyInput.value = "12";
+  result.textContent = "";
+
+});
+
+</script>
+
+</body>
+</html>
