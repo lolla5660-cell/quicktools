@@ -3,172 +3,119 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QuickTools — Free Online Calculators, Text Tools &amp; Converters</title>
-  <meta name="description" content="Use free online calculators, text tools and unit converters with QuickTools. Fast, simple, mobile-friendly tools with no sign-up required.">
-  <meta name="theme-color" content="#f7f9ff">
+  <title>QuickTools — Free Online Calculators, Text Tools & Converters</title>
+  <meta name="description" content="Free online calculators, text tools and unit converters. QuickTools makes everyday tasks faster, simpler and easier on any device.">
+  <meta name="theme-color" content="#f5f7ff">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="monster-home.css">
 </head>
-<body class="monster-home">
-  <header class="monster-header">
-    <div class="monster-nav">
-      <a class="monster-brand" href="index.html" aria-label="QuickTools home">
-        <span class="monster-brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 100 100" role="img">
-            <path d="M24 25 17 10 37 20M76 25 84 10 64 20" fill="#4c7dff" stroke="#3545b7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M17 48C17 26 31 17 50 17s33 9 33 31v20c0 14-14 22-33 22S17 82 17 68Z" fill="#7660f5" stroke="#3946b8" stroke-width="4"/>
-            <path d="M29 29c5-7 13-10 21-10-12 6-17 14-17 26" fill="#a89aff"/>
-            <ellipse cx="38" cy="49" rx="11" ry="14" fill="#fff"/><ellipse cx="63" cy="49" rx="11" ry="14" fill="#fff"/>
-            <ellipse cx="41" cy="51" rx="5" ry="7" fill="#15244d"/><ellipse cx="60" cy="51" rx="5" ry="7" fill="#15244d"/>
-            <circle cx="43" cy="48" r="2.4" fill="#fff"/><circle cx="62" cy="48" r="2.4" fill="#fff"/>
-            <path d="M36 68Q50 81 65 68" fill="#18234d" stroke="#18234d" stroke-width="3" stroke-linecap="round"/>
-            <path d="M40 70 45 76 49 70M53 70 58 76 62 70" fill="#fff"/>
-            <circle cx="25" cy="62" r="4" fill="#ff9ac9"/><circle cx="75" cy="62" r="4" fill="#ff9ac9"/>
+<body class="qt-monster-home">
+  <header class="qt-header">
+    <div class="qt-header-inner">
+      <a class="qt-brand" href="index.html" aria-label="QuickTools home">
+        <span class="qt-logo" aria-hidden="true">
+          <svg viewBox="0 0 64 64">
+            <path d="M13 17 8 5l17 8M51 17 57 5 40 13" fill="#4c7dff" stroke="#3545b7" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M9 31C9 14 19 9 32 9s23 7 23 22v13c0 9-10 15-23 15S9 53 9 44Z" fill="#7258ed" stroke="#3545b7" stroke-width="3"/>
+            <ellipse cx="23" cy="31" rx="7" ry="9" fill="#fff"/><ellipse cx="41" cy="31" rx="7" ry="9" fill="#fff"/>
+            <ellipse cx="25" cy="32" rx="3.5" ry="5" fill="#16234f"/><ellipse cx="39" cy="32" rx="3.5" ry="5" fill="#16234f"/>
+            <circle cx="26" cy="29" r="1.7" fill="#fff"/><circle cx="40" cy="29" r="1.7" fill="#fff"/>
+            <path d="M21 43Q32 54 44 43Q41 52 32 52Q24 51 21 43Z" fill="#18234d"/>
+            <path d="m26 45 5 5 3-5 4 5 4-5" fill="#fff"/>
+            <circle cx="15" cy="40" r="3" fill="#ff9bc8"/><circle cx="49" cy="40" r="3" fill="#ff9bc8"/>
           </svg>
         </span>
-        <span class="monster-brand-type">Quick<span>Tools</span><small>Small tools. Big time saved.</small></span>
+        <span class="qt-brand-copy">Quick<span>Tools</span><small>Small tools. Big time saved.</small></span>
       </a>
-
-      <nav class="monster-links" aria-label="Main navigation">
-        <a class="active" href="index.html">Home</a>
+      <nav class="qt-nav" aria-label="Main navigation">
+        <a class="is-active" href="index.html">Home</a>
         <a href="#calculators">Calculators</a>
         <a href="#converters">Converters</a>
-        <a href="#text">Text Tools</a>
+        <a href="#text-tools">Text Tools</a>
         <a href="#all-tools">All tools</a>
       </nav>
-      <a class="monster-nav-search" href="#tool-search" aria-label="Jump to search">⌕</a>
+      <button class="qt-header-search" type="button" aria-label="Focus search" id="focus-search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/></svg></button>
     </div>
   </header>
 
   <main>
-    <section class="monster-hero">
-      <div class="monster-hero-shape shape-one"></div>
-      <div class="monster-hero-shape shape-two"></div>
-      <div class="monster-hero-inner">
-        <div class="monster-hero-copy">
-          <p class="monster-eyebrow"><span></span> FREE ONLINE TOOLS</p>
+    <section class="qt-hero">
+      <div class="qt-hero-orb qt-orb-left"></div><div class="qt-hero-orb qt-orb-right"></div>
+      <div class="qt-hero-inner">
+        <div class="qt-hero-copy">
+          <p class="qt-eyebrow"><span></span> FREE ONLINE TOOLS</p>
           <h1>Welcome to<br><span>QuickTools</span></h1>
-          <p class="monster-lede">Free online tools to make your life easier, faster and smarter.</p>
-          <form class="monster-search" id="tool-search-form" role="search" onsubmit="return false">
-            <span class="search-symbol" aria-hidden="true">⌕</span>
-            <input id="search" type="search" aria-label="Search tools" autocomplete="off" placeholder="Search for a tool… (e.g. percentage, word counter)">
+          <p class="qt-intro">Free online tools to make your life easier, faster and smarter.</p>
+          <form class="qt-search" id="tool-search-form" role="search" onsubmit="return false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/></svg>
+            <input id="tool-search" type="search" autocomplete="off" aria-label="Search tools" placeholder="Search for a tool… (e.g. compound interest, PDF, unit converter)">
             <button type="button" id="clear-search" aria-label="Clear search" hidden>×</button>
-            <span id="search-count" class="monster-search-count" aria-live="polite"></span>
+            <button type="button" class="qt-search-submit" id="search-button">Search <span>→</span></button>
           </form>
-          <div class="monster-benefits">
-            <span><b>ϟ</b> Fast &amp; easy</span>
-            <i></i><span><b>♡</b> 100% free</span>
-            <i></i><span><b>▯</b> Works on any device</span>
+          <div class="qt-benefits">
+            <span><b>ϟ</b> Fast &amp; easy</span><i></i>
+            <span><b>◇</b> 100% free</span><i></i>
+            <span><b>▯</b> Works on any device</span><i></i>
+            <span class="qt-benefit-last"><b>♡</b> Made for everyone</span>
           </div>
         </div>
-
-        <div class="monster-hero-art" aria-label="Friendly QuickTools monster mascot">
-          <div class="monster-art-glow"></div>
-          <svg class="monster-full" viewBox="0 0 430 400" role="img" aria-labelledby="mascot-title">
-            <title id="mascot-title">The friendly QuickTools monster</title>
-            <path d="M113 92 89 26 151 63M294 82 333 19 343 100" fill="#4c7dff" stroke="#3144b8" stroke-width="9" stroke-linejoin="round"/>
-            <path d="M96 69 115 87 126 55M311 65 335 48 328 85" fill="#8ee8f5"/>
-            <path d="M74 176C74 91 121 47 213 47c91 0 142 50 142 130v105c0 67-62 95-142 95S74 349 74 282Z" fill="#7258ed" stroke="#3645b8" stroke-width="8"/>
-            <path d="M101 111c20-39 61-55 101-57-41 19-64 49-66 85" fill="#a89aff"/>
-            <path d="M278 78c33 18 50 50 53 88-18-25-37-37-60-43" fill="#6048db"/>
-            <ellipse cx="165" cy="174" rx="42" ry="52" fill="#fff"/>
-            <ellipse cx="263" cy="174" rx="42" ry="52" fill="#fff"/>
-            <ellipse cx="177" cy="182" rx="20" ry="29" fill="#16234f"/>
-            <ellipse cx="252" cy="182" rx="20" ry="29" fill="#16234f"/>
-            <circle cx="184" cy="170" r="8" fill="#fff"/><circle cx="259" cy="170" r="8" fill="#fff"/>
-            <ellipse cx="214" cy="222" rx="10" ry="6" fill="#4639bd"/>
-            <path d="M151 245Q213 304 279 245Q274 289 215 293Q160 288 151 245Z" fill="#18234d"/>
-            <path d="M171 261 190 280 202 262M225 263 239 280 258 260" fill="#fff"/>
-            <circle cx="126" cy="220" r="12" fill="#ff9bc8"/><circle cx="302" cy="220" r="12" fill="#ff9bc8"/>
-            <path d="M82 269Q40 279 55 322Q67 346 103 320" fill="#7258ed" stroke="#3645b8" stroke-width="8" stroke-linecap="round"/>
-            <path d="M342 267Q389 276 371 322Q360 345 326 319" fill="#7258ed" stroke="#3645b8" stroke-width="8" stroke-linecap="round"/>
-            <path d="M118 319Q213 355 309 319L297 376Q213 398 130 376Z" fill="#5e49dc"/>
-            <path d="M139 330Q213 354 288 330L280 355Q214 376 147 355Z" fill="#f7f8ff"/>
-            <path d="M149 339 173 343M251 343 275 339" stroke="#c9c6ff" stroke-width="5" stroke-linecap="round"/>
-            <path d="M66 142 38 124M354 143 384 122M65 181 34 179M359 182 390 177" stroke="#7863f5" stroke-width="7" stroke-linecap="round"/>
-            <path d="M36 72l7-15 7 15 15 7-15 7-7 15-7-15-15-7Z" fill="#ffc96b"/>
-            <path d="M370 65l5-11 5 11 11 5-11 5-5 11-5-11-11-5Z" fill="#68d9e8"/>
-          </svg>
-          <div class="monster-speech">Your everyday tools<br><strong>in one place</strong> <span>♡</span></div>
-          <span class="monster-spark spark-a">✦</span><span class="monster-spark spark-b">✧</span>
+        <div class="qt-hero-art" role="img" aria-label="Friendly fluffy purple QuickTools monster with blue striped horns">
+          <img src="monster-hero.webp" alt="The friendly purple QuickTools monster mascot">
+          <div class="qt-speech-card">Let’s make it easy!<span>♡</span></div>
         </div>
       </div>
     </section>
 
-    <section class="monster-tools-section" id="all-tools">
-      <div class="monster-section-heading">
-        <div><p class="monster-section-kicker">PICK A TOOL</p><h2>Popular tools</h2></div>
-        <span class="monster-heading-spark">✧</span>
+    <section class="qt-popular" id="all-tools">
+      <div class="qt-section-heading">
+        <h2><span>✧</span> Popular Tools</h2>
+        <a href="#tool-categories">View all tools <span>→</span></a>
       </div>
-      <p class="monster-no-results" id="no-results" hidden>No tools found. Try another search.</p>
-
-      <section class="monster-tool-group" id="calculators">
-        <div class="monster-group-title"><span class="group-icon purple">▦</span><h3>Calculators</h3><a href="#calculators">Explore section →</a></div>
-        <div class="monster-grid">
-          <a class="monster-card" data-name="percentage calculator percent" href="percentage-calculator.html"><span class="monster-card-icon purple">%</span><span class="monster-card-copy"><strong>Percentage Calculator</strong><small>Calculate percentages quickly and easily.</small></span><span class="monster-arrow">→</span></a>
-          <a class="monster-card" data-name="discount calculator sale savings price" href="discount-calculator.html"><span class="monster-card-icon peach">🏷</span><span class="monster-card-copy"><strong>Discount Calculator</strong><small>Find sale prices and savings.</small></span><span class="monster-arrow">→</span></a>
-          <a class="monster-card" data-name="age calculator birthday date" href="age-calculator.html"><span class="monster-card-icon blue">◷</span><span class="monster-card-copy"><strong>Age Calculator</strong><small>Calculate your exact age from a birth date.</small></span><span class="monster-arrow">→</span></a>
-          <a class="monster-card" data-name="tip calculator bill split tip" href="tip-calculator.html"><span class="monster-card-icon green">$</span><span class="monster-card-copy"><strong>Tip Calculator</strong><small>Calculate tips and split a bill.</small></span><span class="monster-arrow">→</span></a>
-          <a class="monster-card" data-name="gpa calculator grade point average school university" href="gpa-calculator.html"><span class="monster-card-icon aqua">✦</span><span class="monster-card-copy"><strong>GPA Calculator</strong><small>Calculate a weighted GPA from courses and credits.</small></span><span class="monster-arrow">→</span></a>
-          <a class="monster-card" data-name="grade calculator school marks weighted grades" href="grade-calculator.html"><span class="monster-card-icon pink">✓</span><span class="monster-card-copy"><strong>Grade Calculator</strong><small>Calculate weighted grade contributions.</small></span><span class="monster-arrow">→</span></a>
-        </div>
-      </section>
-
-      <section class="monster-tool-group" id="text">
-        <div class="monster-group-title"><span class="group-icon pink">Aa</span><h3>Text tools</h3><a href="#text">Explore section →</a></div>
-        <div class="monster-grid">
-          <a class="monster-card" data-name="word counter words characters sentences text" href="word-counter.html"><span class="monster-card-icon aqua">Aa</span><span class="monster-card-copy"><strong>Word Counter</strong><small>Count words, characters and sentences.</small></span><span class="monster-arrow">→</span></a>
-          <a class="monster-card" data-name="case converter uppercase lowercase title case text" href="case-converter.html"><span class="monster-card-icon purple">Tt</span><span class="monster-card-copy"><strong>Case Converter</strong><small>Convert text to upper, lower and title case.</small></span><span class="monster-arrow">→</span></a>
-          <a class="monster-card" data-name="remove duplicate lines repeated text clean" href="duplicate-lines.html"><span class="monster-card-icon peach">≡</span><span class="monster-card-copy"><strong>Remove Duplicate Lines</strong><small>Clean repeated lines from text.</small></span><span class="monster-arrow">→</span></a>
-        </div>
-      </section>
-
-      <section class="monster-tool-group" id="converters">
-        <div class="monster-group-title"><span class="group-icon blue">↔</span><h3>Converters</h3><a href="#converters">Explore section →</a></div>
-        <div class="monster-grid">
-          <a class="monster-card" data-name="cm to inches centimeter length converter" href="cm-to-inches.html"><span class="monster-card-icon peach">↔</span><span class="monster-card-copy"><strong>CM to Inches</strong><small>Convert centimeters to inches.</small></span><span class="monster-arrow">→</span></a>
-          <a class="monster-card" data-name="kg to lbs kilograms pounds weight converter" href="kg-to-lbs.html"><span class="monster-card-icon green">⚖</span><span class="monster-card-copy"><strong>KG to LBS</strong><small>Convert kilograms to pounds.</small></span><span class="monster-arrow">→</span></a>
-          <a class="monster-card" data-name="celsius fahrenheit temperature converter" href="celsius-fahrenheit.html"><span class="monster-card-icon blue">°</span><span class="monster-card-copy"><strong>Celsius to Fahrenheit</strong><small>Convert temperatures instantly.</small></span><span class="monster-arrow">→</span></a>
-          <a class="monster-card" data-name="inches to cm inch centimeter length converter" href="inches-to-cm.html"><span class="monster-card-icon purple">↔</span><span class="monster-card-copy"><strong>Inches to CM</strong><small>Convert inches to centimeters.</small></span><span class="monster-arrow">→</span></a>
-          <a class="monster-card" data-name="lbs to kg pounds kilograms weight converter" href="lbs-to-kg.html"><span class="monster-card-icon pink">⚖</span><span class="monster-card-copy"><strong>LBS to KG</strong><small>Convert pounds to kilograms.</small></span><span class="monster-arrow">→</span></a>
-          <a class="monster-card" data-name="unit converter units length weight volume" href="unit-converter.html"><span class="monster-card-icon aqua">⇄</span><span class="monster-card-copy"><strong>Unit Converter</strong><small>Convert common units in one place.</small></span><span class="monster-arrow">→</span></a>
-        </div>
-      </section>
+      <p class="qt-no-results" id="no-results" hidden>No tools found. Try a different search.</p>
+      <div class="qt-card-grid" id="popular-grid">
+        <a class="qt-tool-card" data-name="percentage calculator percent calculate percentage" href="percentage-calculator.html"><span class="qt-card-icon purple">%</span><span class="qt-card-copy"><strong>Percentage Calculator</strong><small>Calculate percentages quickly and easily.</small></span><span class="qt-card-arrow">→</span></a>
+        <a class="qt-tool-card" data-name="unit converter units length weight volume" href="unit-converter.html"><span class="qt-card-icon yellow">↔</span><span class="qt-card-copy"><strong>Unit Converter</strong><small>Convert units of length, weight, volume and more.</small></span><span class="qt-card-arrow">→</span></a>
+        <a class="qt-tool-card" data-name="discount calculator sale price savings" href="discount-calculator.html"><span class="qt-card-icon blue">％</span><span class="qt-card-copy"><strong>Discount Calculator</strong><small>Find sale prices and see how much you save.</small></span><span class="qt-card-arrow">→</span></a>
+        <a class="qt-tool-card" data-name="age calculator date birthday" href="age-calculator.html"><span class="qt-card-icon orange">◷</span><span class="qt-card-copy"><strong>Age Calculator</strong><small>Calculate your age in years, months and days.</small></span><span class="qt-card-arrow">→</span></a>
+        <a class="qt-tool-card" data-name="case converter text uppercase lowercase title" href="case-converter.html"><span class="qt-card-icon coral">▤</span><span class="qt-card-copy"><strong>Text Case Converter</strong><small>Change text to uppercase, lowercase and more.</small></span><span class="qt-card-arrow">→</span></a>
+        <a class="qt-tool-card" data-name="word counter words characters sentences" href="word-counter.html"><span class="qt-card-icon mint">◷</span><span class="qt-card-copy"><strong>Word Counter</strong><small>Count words and characters in seconds.</small></span><span class="qt-card-arrow">→</span></a>
+        <a class="qt-tool-card" data-name="gpa calculator grade point average school university" href="gpa-calculator.html"><span class="qt-card-icon purple">▦</span><span class="qt-card-copy"><strong>GPA Calculator</strong><small>Calculate your grade point average with ease.</small></span><span class="qt-card-arrow">→</span></a>
+        <a class="qt-tool-card" data-name="tip calculator bill split gratuity" href="tip-calculator.html"><span class="qt-card-icon pink">$</span><span class="qt-card-copy"><strong>Tip Calculator</strong><small>Calculate a tip and split the bill.</small></span><span class="qt-card-arrow">→</span></a>
+      </div>
+      <div class="qt-all-tools" id="tool-categories">
+        <section class="qt-category" id="calculators"><h3>Calculators</h3><div>
+          <a href="percentage-calculator.html">Percentage Calculator</a><a href="discount-calculator.html">Discount Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a><a href="gpa-calculator.html">GPA Calculator</a><a href="grade-calculator.html">Grade Calculator</a>
+        </div></section>
+        <section class="qt-category" id="converters"><h3>Converters</h3><div>
+          <a href="unit-converter.html">Unit Converter</a><a href="cm-to-inches.html">CM to Inches</a><a href="inches-to-cm.html">Inches to CM</a><a href="kg-to-lbs.html">KG to LBS</a><a href="lbs-to-kg.html">LBS to KG</a><a href="celsius-fahrenheit.html">Celsius to Fahrenheit</a>
+        </div></section>
+        <section class="qt-category" id="text-tools"><h3>Text Tools</h3><div>
+          <a href="case-converter.html">Text Case Converter</a><a href="word-counter.html">Word Counter</a><a href="duplicate-lines.html">Remove Duplicate Lines</a>
+        </div></section>
+      </div>
     </section>
 
-    <section class="monster-bottom-banner">
-      <div class="monster-mini-mascot" aria-hidden="true">
-        <svg viewBox="0 0 100 100"><path d="M24 25 17 10 37 20M76 25 84 10 64 20" fill="#4c7dff" stroke="#3545b7" stroke-width="4" stroke-linecap="round"/><path d="M17 48C17 26 31 17 50 17s33 9 33 31v20c0 14-14 22-33 22S17 82 17 68Z" fill="#7660f5" stroke="#3946b8" stroke-width="4"/><ellipse cx="38" cy="49" rx="11" ry="14" fill="#fff"/><ellipse cx="63" cy="49" rx="11" ry="14" fill="#fff"/><ellipse cx="41" cy="51" rx="5" ry="7" fill="#15244d"/><ellipse cx="60" cy="51" rx="5" ry="7" fill="#15244d"/><path d="M36 68Q50 81 65 68" fill="#18234d" stroke="#18234d" stroke-width="3" stroke-linecap="round"/></svg>
-      </div>
-      <div class="monster-banner-copy"><strong>QuickTools Monster says…</strong><span>Save time, do more. You got this!</span></div>
-      <div class="monster-banner-doodle">✧ Explore all tools ↗</div>
-      <a class="monster-banner-button" href="#all-tools">Browse all tools <span>→</span></a>
-    </section>
-
-    <section class="monster-seo-content">
+    <section class="qt-seo">
       <h2>Free online calculators, text tools and converters</h2>
-      <p>QuickTools is a growing collection of free online tools for everyday tasks. Calculate percentages and discounts, work out your age or grades, clean up text, and convert common measurements in a few clicks.</p>
-      <h3>Simple tools, right when you need them</h3>
-      <p>Choose a tool, enter your values and get your result. QuickTools works in your browser, with no account or download required for these tools. The layout is designed to work on desktop, tablet and mobile devices.</p>
+      <p>QuickTools brings simple, free online tools together in one place. Calculate percentages and discounts, work out your age or GPA, convert measurements, and tidy up text. Our tools work in your browser and are designed for desktop, tablet and mobile.</p>
     </section>
   </main>
 
-  <footer class="monster-footer">
-    <div class="monster-footer-inner">
-      <div class="monster-footer-brand"><a class="monster-brand" href="index.html"><span class="monster-brand-mark" aria-hidden="true">👾</span><span class="monster-brand-type">Quick<span>Tools</span><small>Small tools. Big time saved.</small></span></a><p>Free online tools for everyday tasks.</p></div>
-      <div class="monster-footer-links"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+  <footer class="qt-footer">
+    <div class="qt-footer-wave"></div>
+    <div class="qt-footer-inner">
+      <div class="qt-footer-brand"><a class="qt-brand" href="index.html"><span class="qt-footer-mascot">👾</span><span class="qt-brand-copy">Quick<span>Tools</span><small>Small tools. Big time saved.</small></span></a></div>
+      <nav class="qt-footer-links" aria-label="Footer"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+      <div class="qt-footer-tagline">Built with <b>♡</b><br>good vibes</div>
     </div>
-    <div class="monster-footer-bottom">© 2026 QuickTools. All rights reserved. <span>Made to make your day easier ✦</span></div>
+    <div class="qt-footer-bottom">© 2026 QuickTools. Free tools for everyday life.</div>
   </footer>
 
   <script>
-    const searchInput = document.querySelector('#search');
-    const cards = [...document.querySelectorAll('.monster-card')];
-    const count = document.querySelector('#search-count');
-    const clearButton = document.querySelector('#clear-search');
-    const noResults = document.querySelector('#no-results');
-    const groups = [...document.querySelectorAll('.monster-tool-group')];
-
+    const searchInput = document.getElementById('tool-search');
+    const cards = [...document.querySelectorAll('.qt-tool-card')];
+    const clearButton = document.getElementById('clear-search');
+    const noResults = document.getElementById('no-results');
     function filterTools() {
       const query = searchInput.value.trim().toLowerCase();
       let visible = 0;
@@ -177,15 +124,13 @@
         card.hidden = !match;
         if (match) visible++;
       });
-      groups.forEach(group => {
-        group.hidden = ![...group.querySelectorAll('.monster-card')].some(card => !card.hidden);
-      });
-      count.textContent = query ? `${visible} tool${visible === 1 ? '' : 's'} found` : '';
-      clearButton.hidden = !query;
       noResults.hidden = !query || visible !== 0;
+      clearButton.hidden = !query;
     }
     searchInput.addEventListener('input', filterTools);
     clearButton.addEventListener('click', () => { searchInput.value = ''; filterTools(); searchInput.focus(); });
+    document.getElementById('focus-search').addEventListener('click', () => { searchInput.focus(); window.scrollTo({top: 0, behavior: 'smooth'}); });
+    document.getElementById('search-button').addEventListener('click', () => { filterTools(); document.getElementById('popular-grid').scrollIntoView({behavior:'smooth', block:'start'}); });
   </script>
 </body>
 </html>
