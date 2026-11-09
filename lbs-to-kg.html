@@ -1,1 +1,231 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LBS to KG Converter | QuickTools</title><meta name="description" content="Convert pounds to kilograms quickly with this free online weight converter."><link rel="stylesheet" href="styles.css"></head><body><header><div class="wrap nav"><a class="brand" href="index.html">Quick<span>Tools</span></a><nav><a href="index.html#calculators">Calculators</a><a href="index.html#text">Text</a><a href="index.html#converters">Converters</a></nav></div></header><main class="wrap tool"><h1>LBS to KG</h1><p>Convert pounds to kilograms.</p><div class="panel"><input id="value" type="number" step="any" placeholder="Pounds"><button id="calc">Convert</button><div id="result" class="result"></div></div><section class="seo-content wrap"><h2>About the LBS to KG Converter</h2><p>Enter a weight in pounds to convert it to kilograms. One pound equals approximately 0.45359237 kilograms.</p><p>For example, 130 pounds is approximately 58.967 kilograms.</p><h2>Frequently Asked Question</h2><h3>How many kilograms are in 1 pound?</h3><p>One pound equals approximately 0.45359237 kilograms.</p></section></main><footer class="site-footer"><div class="wrap footer-inner"><div><strong>QuickTools</strong><p>Free online tools for everyday tasks.</p></div><div class="footer-links"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div><div class="wrap copyright">© 2026 QuickTools. All rights reserved.</div></footer><script>document.querySelector('#calc').onclick=()=>{const v=parseFloat(value.value);result.textContent=Number.isFinite(v)?v+' lb = '+(v*0.45359237).toFixed(2)+' kg':'Enter a value.'}</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LBS to KG Converter | QuickTools</title>
+  <meta name="description" content="Convert pounds to kilograms instantly with this free lbs to kg converter. Check common weight conversions, examples, and the conversion formula.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Quick<span>Tools</span></a>
+    <nav>
+      <a href="index.html#calculators">Calculators</a>
+      <a href="index.html#text">Text</a>
+      <a href="index.html#converters">Converters</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="wrap section">
+    <p class="eyebrow">FREE ONLINE TOOL</p>
+    <h1>Pounds to Kilograms Converter</h1>
+    <p>
+      Convert pounds (lbs) to kilograms (kg) quickly and accurately.
+      Enter any weight to get your result instantly.
+    </p>
+
+    <div class="panel">
+      <label for="pounds"><strong>Weight in Pounds (lbs)</strong></label>
+
+      <input
+        id="pounds"
+        type="number"
+        step="any"
+        min="0"
+        placeholder="Enter pounds, e.g. 150"
+        style="width:100%;margin:10px 0 15px"
+      >
+
+      <button type="button" onclick="convertToKG()">
+        Convert to Kilograms
+      </button>
+
+      <div id="result" class="result" aria-live="polite">
+        Your kilogram result will appear here.
+      </div>
+    </div>
+  </section>
+
+  <section class="seo-content wrap">
+
+    <h2>How to Convert Pounds to Kilograms</h2>
+
+    <p>
+      Pounds and kilograms are units used to measure weight or mass.
+      Pounds are commonly used in the United States, while kilograms
+      are the standard unit in most countries that use the metric system.
+    </p>
+
+    <p>
+      To convert pounds to kilograms, multiply the weight in pounds
+      by 0.45359237. The result is the equivalent weight in kilograms.
+    </p>
+
+    <h2>Pounds to KG Conversion Formula</h2>
+
+    <p><strong>Kilograms = Pounds × 0.45359237</strong></p>
+
+    <p>For example, to convert 150 pounds:</p>
+
+    <ul>
+      <li>Start with 150 pounds.</li>
+      <li>Multiply 150 by 0.45359237.</li>
+      <li>The result is approximately 68.04 kilograms.</li>
+    </ul>
+
+    <h2>Pounds to Kilograms Conversion Chart</h2>
+
+    <p>
+      Use this reference chart to find the kilogram equivalent
+      of common weights.
+    </p>
+
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;margin:18px 0">
+        <thead>
+          <tr style="background:#eef0ff">
+            <th style="padding:12px;border:1px solid #dce3ff;text-align:left">Pounds (lbs)</th>
+            <th style="padding:12px;border:1px solid #dce3ff;text-align:left">Kilograms (kg)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">1 lb</td><td style="padding:11px;border:1px solid #e5e9f0">0.45 kg</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">5 lbs</td><td style="padding:11px;border:1px solid #e5e9f0">2.27 kg</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">10 lbs</td><td style="padding:11px;border:1px solid #e5e9f0">4.54 kg</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">20 lbs</td><td style="padding:11px;border:1px solid #e5e9f0">9.07 kg</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">50 lbs</td><td style="padding:11px;border:1px solid #e5e9f0">22.68 kg</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">100 lbs</td><td style="padding:11px;border:1px solid #e5e9f0">45.36 kg</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">120 lbs</td><td style="padding:11px;border:1px solid #e5e9f0">54.43 kg</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">130 lbs</td><td style="padding:11px;border:1px solid #e5e9f0">58.97 kg</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">150 lbs</td><td style="padding:11px;border:1px solid #e5e9f0">68.04 kg</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">180 lbs</td><td style="padding:11px;border:1px solid #e5e9f0">81.65 kg</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">200 lbs</td><td style="padding:11px;border:1px solid #e5e9f0">90.72 kg</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">220 lbs</td><td style="padding:11px;border:1px solid #e5e9f0">99.79 kg</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">250 lbs</td><td style="padding:11px;border:1px solid #e5e9f0">113.40 kg</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Why Convert Pounds to Kilograms?</h2>
+
+    <h3>International Weight Measurements</h3>
+    <p>
+      Many international websites and product listings display weight
+      in kilograms. Converting pounds makes it easier to understand
+      measurements when comparing information from different countries.
+    </p>
+
+    <h3>Travel and Luggage</h3>
+    <p>
+      Some airlines display baggage limits in kilograms, while others
+      use pounds. Knowing how to convert between the two units helps
+      you understand luggage weight restrictions.
+    </p>
+
+    <h3>Fitness and Everyday Use</h3>
+    <p>
+      Fitness equipment, weight plates, and workout information may
+      use either pounds or kilograms. This converter makes switching
+      between the two measurements simple.
+    </p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>How many kilograms are in one pound?</h3>
+    <p>
+      One pound equals approximately 0.45359237 kilograms.
+    </p>
+
+    <h3>How many kilograms are in 100 pounds?</h3>
+    <p>
+      100 pounds equal approximately 45.36 kilograms.
+    </p>
+
+    <h3>How many kilograms are in 150 pounds?</h3>
+    <p>
+      150 pounds equal approximately 68.04 kilograms.
+    </p>
+
+    <h3>How many kilograms are in 200 pounds?</h3>
+    <p>
+      200 pounds equal approximately 90.72 kilograms.
+    </p>
+
+    <h3>Is a pound heavier than a kilogram?</h3>
+    <p>
+      No. One kilogram equals approximately 2.20462 pounds,
+      so a kilogram is heavier than a pound.
+    </p>
+
+    <h3>How can I convert pounds to kilograms without a calculator?</h3>
+    <p>
+      Multiply the number of pounds by approximately 0.454
+      to get a close kilogram estimate.
+    </p>
+
+    <h2>Explore More Free Conversion Tools</h2>
+
+    <ul>
+      <li><a href="kg-to-lbs.html">KG to LBS Converter</a></li>
+      <li><a href="cm-to-inches.html">CM to Inches Converter</a></li>
+      <li><a href="inches-to-cm.html">Inches to CM Converter</a></li>
+      <li><a href="celsius-fahrenheit.html">Celsius to Fahrenheit Converter</a></li>
+    </ul>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <strong>QuickTools</strong>
+      <p>Free online tools for everyday tasks.</p>
+    </div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
+  <div class="wrap copyright">
+    © 2026 QuickTools. All rights reserved.
+  </div>
+</footer>
+
+<script>
+function convertToKG() {
+  const input = document.getElementById('pounds');
+  const result = document.getElementById('result');
+
+  if (input.value.trim() === '') {
+    result.textContent = 'Please enter a weight in pounds.';
+    return;
+  }
+
+  const pounds = Number(input.value);
+
+  if (!Number.isFinite(pounds) || pounds < 0) {
+    result.textContent = 'Please enter a valid non-negative number.';
+    return;
+  }
+
+  const kg = pounds * 0.45359237;
+
+  result.textContent =
+    `${pounds} lbs = ${Number(kg.toFixed(2))} kg`;
+}
+
+document.getElementById('pounds').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    convertToKG();
+  }
+});
+</script>
+
+</body>
+</html>
