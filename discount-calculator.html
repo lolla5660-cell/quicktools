@@ -1,162 +1,287 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discount Calculator - Calculate Sale Price and Savings | QuickTools</title>
-  <meta name="description" content="Use this free discount calculator to find the final sale price and total savings. Calculate discounts easily with examples and a simple formula.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Discount Calculator | Calculate Sale Price and Savings | QuickTools</title>
+  <meta name="description" content="Calculate discounts easily with this free discount calculator. Find the final sale price, discount amount, and how much money you save.">
   <link rel="stylesheet" href="styles.css">
-  <link rel="canonical" href="https://lolla5660-cell.github.io/quicktools/discount-calculator.html">
 </head>
-
 <body>
-  <header>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Quick<span>Tools</span></a>
+    <nav>
+      <a href="index.html#calculators">Calculators</a>
+      <a href="index.html#text">Text</a>
+      <a href="index.html#converters">Converters</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="wrap section">
+    <p class="eyebrow">FREE ONLINE TOOL</p>
     <h1>Discount Calculator</h1>
-    <p>Calculate your sale price and savings instantly.</p>
-  </header>
+    <p>
+      Calculate the discounted price of any product quickly.
+      Enter the original price and discount percentage to see
+      your final price and total savings.
+    </p>
 
-  <main class="container">
-    <section class="panel">
-      <h2>Calculate Your Discount</h2>
+    <div class="panel">
+      <label for="price"><strong>Original Price</strong></label>
 
-      <label for="price">Original Price</label>
-      <input type="number" id="price" placeholder="Enter original price" min="0" step="any">
+      <input
+        id="price"
+        type="number"
+        step="any"
+        min="0"
+        placeholder="Enter original price, e.g. 100"
+        style="width:100%;margin:10px 0 15px"
+      >
 
-      <label for="discount">Discount Percentage (%)</label>
-      <input type="number" id="discount" placeholder="Enter discount percentage" min="0" max="100" step="any">
+      <label for="discount"><strong>Discount Percentage (%)</strong></label>
 
-      <button onclick="calculateDiscount()">Calculate Discount</button>
+      <input
+        id="discount"
+        type="number"
+        step="any"
+        min="0"
+        max="100"
+        placeholder="Enter discount, e.g. 20"
+        style="width:100%;margin:10px 0 15px"
+      >
 
-      <div class="result" id="result" aria-live="polite">
+      <button type="button" onclick="calculateDiscount()">
+        Calculate Discount
+      </button>
+
+      <div id="result" class="result" aria-live="polite">
         Your discounted price will appear here.
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="panel">
-      <h2>How to Calculate a Discount</h2>
-      <p>A discount reduces the original price of a product by a certain percentage. You can use this calculator to find how much money you save and how much you need to pay after the discount.</p>
+  <section class="seo-content wrap">
 
-      <h3>Discount Formula</h3>
-      <p><strong>Discount Amount = Original Price × (Discount Percentage ÷ 100)</strong></p>
-      <p><strong>Final Price = Original Price − Discount Amount</strong></p>
+    <h2>How to Calculate a Discount</h2>
 
-      <h3>Example</h3>
-      <p>If an item costs $100 and has a 20% discount:</p>
-      <ul>
-        <li>Original price: $100</li>
-        <li>Discount amount: $20</li>
-        <li>Final price: $80</li>
-      </ul>
-    </section>
+    <p>
+      A discount is a reduction in the original price of a product
+      or service. It is usually expressed as a percentage.
+      A discount calculator helps you find the amount you save
+      and the final price you need to pay.
+    </p>
 
-    <section class="panel">
-      <h2>Common Discount Examples</h2>
-      <p>See how different discount percentages affect a product with an original price of $100.</p>
+    <p>
+      Enter the original price and discount percentage into the
+      calculator above. The result will show the discount amount
+      and the reduced price instantly.
+    </p>
 
-      <div class="table-wrapper">
-        <table>
-          <thead>
-            <tr>
-              <th>Discount</th>
-              <th>You Save</th>
-              <th>Final Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>5%</td><td>$5</td><td>$95</td></tr>
-            <tr><td>10%</td><td>$10</td><td>$90</td></tr>
-            <tr><td>15%</td><td>$15</td><td>$85</td></tr>
-            <tr><td>20%</td><td>$20</td><td>$80</td></tr>
-            <tr><td>25%</td><td>$25</td><td>$75</td></tr>
-            <tr><td>30%</td><td>$30</td><td>$70</td></tr>
-            <tr><td>40%</td><td>$40</td><td>$60</td></tr>
-            <tr><td>50%</td><td>$50</td><td>$50</td></tr>
-            <tr><td>70%</td><td>$70</td><td>$30</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+    <h2>Discount Calculation Formula</h2>
 
-    <section class="panel">
-      <h2>When Can You Use a Discount Calculator?</h2>
-      <ul>
-        <li><strong>Shopping:</strong> Find the sale price before buying clothes, electronics, or household items.</li>
-        <li><strong>Online deals:</strong> Compare promotional offers and coupon discounts.</li>
-        <li><strong>Budget planning:</strong> Know how much money you save during sales.</li>
-        <li><strong>Price comparison:</strong> Compare discounted prices between different stores.</li>
-      </ul>
-    </section>
+    <p>
+      You can calculate a discount using two simple steps:
+    </p>
 
-    <section class="panel">
-      <h2>Frequently Asked Questions</h2>
+    <p><strong>Discount Amount = Original Price × (Discount Percentage ÷ 100)</strong></p>
 
-      <h3>How do I calculate 20% off a price?</h3>
-      <p>Multiply the original price by 0.20 to find the discount amount, then subtract it from the original price.</p>
+    <p><strong>Final Price = Original Price − Discount Amount</strong></p>
 
-      <h3>Does this calculator show how much I save?</h3>
-      <p>Yes. It displays the discount amount, final price, and percentage discount.</p>
+    <h2>Discount Calculation Example</h2>
 
-      <h3>Can I calculate a 100% discount?</h3>
-      <p>Yes. A 100% discount means the entire original price is deducted, so the final price is zero.</p>
+    <p>
+      Imagine you want to buy a product that costs $150
+      and the store offers a 20% discount.
+    </p>
 
-      <h3>Can I use this calculator for any currency?</h3>
-      <p>Yes. Enter the price in your preferred currency. The calculator works with the numerical amount and does not require a specific currency.</p>
-    </section>
+    <ul>
+      <li>Original price: $150</li>
+      <li>Discount percentage: 20%</li>
+      <li>Discount amount: $30</li>
+      <li>Final price: $120</li>
+    </ul>
 
-    <section class="panel">
-      <h2>More Free Online Tools</h2>
-      <ul>
-        <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
-        <li><a href="cm-to-inches.html">CM to Inches Converter</a></li>
-        <li><a href="inches-to-cm.html">Inches to CM Converter</a></li>
-        <li><a href="lbs-to-kg.html">LBS to KG Converter</a></li>
-        <li><a href="kg-to-lbs.html">KG to LBS Converter</a></li>
-        <li><a href="celsius-fahrenheit.html">Celsius to Fahrenheit Converter</a></li>
-      </ul>
-    </section>
-  </main>
+    <p>
+      You save $30 and pay only $120 after applying the discount.
+    </p>
 
-  <footer>
-    <p>© 2026 QuickTools. Free online calculators and converters.</p>
-  </footer>
+    <h2>Discount Percentage Chart</h2>
 
-  <script>
-    function calculateDiscount() {
-      const price = parseFloat(document.getElementById("price").value);
-      const discount = parseFloat(document.getElementById("discount").value);
-      const result = document.getElementById("result");
+    <p>
+      The following chart shows different discount percentages
+      for an item with an original price of $100.
+    </p>
 
-      if (
-        document.getElementById("price").value.trim() === "" ||
-        document.getElementById("discount").value.trim() === "" ||
-        !Number.isFinite(price) ||
-        !Number.isFinite(discount) ||
-        price < 0 ||
-        discount < 0 ||
-        discount > 100
-      ) {
-        result.innerHTML = "Please enter a valid price and a discount between 0 and 100.";
-        return;
-      }
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;margin:18px 0">
+        <thead>
+          <tr style="background:#eef0ff">
+            <th style="padding:12px;border:1px solid #dce3ff;text-align:left">Discount</th>
+            <th style="padding:12px;border:1px solid #dce3ff;text-align:left">Amount Saved</th>
+            <th style="padding:12px;border:1px solid #dce3ff;text-align:left">Final Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">5%</td><td style="padding:11px;border:1px solid #e5e9f0">$5</td><td style="padding:11px;border:1px solid #e5e9f0">$95</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">10%</td><td style="padding:11px;border:1px solid #e5e9f0">$10</td><td style="padding:11px;border:1px solid #e5e9f0">$90</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">15%</td><td style="padding:11px;border:1px solid #e5e9f0">$15</td><td style="padding:11px;border:1px solid #e5e9f0">$85</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">20%</td><td style="padding:11px;border:1px solid #e5e9f0">$20</td><td style="padding:11px;border:1px solid #e5e9f0">$80</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">25%</td><td style="padding:11px;border:1px solid #e5e9f0">$25</td><td style="padding:11px;border:1px solid #e5e9f0">$75</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">30%</td><td style="padding:11px;border:1px solid #e5e9f0">$30</td><td style="padding:11px;border:1px solid #e5e9f0">$70</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">40%</td><td style="padding:11px;border:1px solid #e5e9f0">$40</td><td style="padding:11px;border:1px solid #e5e9f0">$60</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">50%</td><td style="padding:11px;border:1px solid #e5e9f0">$50</td><td style="padding:11px;border:1px solid #e5e9f0">$50</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">60%</td><td style="padding:11px;border:1px solid #e5e9f0">$60</td><td style="padding:11px;border:1px solid #e5e9f0">$40</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">70%</td><td style="padding:11px;border:1px solid #e5e9f0">$70</td><td style="padding:11px;border:1px solid #e5e9f0">$30</td></tr>
+        </tbody>
+      </table>
+    </div>
 
-      const savings = price * (discount / 100);
-      const finalPrice = price - savings;
+    <h2>Where Are Discounts Commonly Used?</h2>
 
-      result.innerHTML =
-        "<strong>Original Price:</strong> " + price.toFixed(2) +
-        "<br><strong>Discount:</strong> " + discount.toFixed(2) + "%" +
-        "<br><strong>You Save:</strong> " + savings.toFixed(2) +
-        "<br><strong>Final Price:</strong> " + finalPrice.toFixed(2);
-    }
+    <h3>Online Shopping</h3>
+    <p>
+      Online stores often offer percentage discounts during seasonal
+      sales and special promotions. Use the calculator to find the
+      actual price before completing your purchase.
+    </p>
 
-    document.getElementById("price").addEventListener("keydown", function(event) {
-      if (event.key === "Enter") calculateDiscount();
-    });
+    <h3>Clothing and Electronics</h3>
+    <p>
+      When shopping for clothes, phones, computers, or household
+      products, a discount calculator helps you compare sale prices
+      and decide which offer gives you better value.
+    </p>
 
-    document.getElementById("discount").addEventListener("keydown", function(event) {
-      if (event.key === "Enter") calculateDiscount();
-    });
-  </script>
+    <h3>Coupons and Special Offers</h3>
+    <p>
+      Some stores provide discount codes such as 10%, 15%, or 25% off.
+      Calculate the savings before applying a coupon to your order.
+    </p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>How do I calculate 20% off a price?</h3>
+    <p>
+      Multiply the original price by 0.20 to find the discount amount.
+      Then subtract that amount from the original price.
+    </p>
+
+    <h3>How much is 30% off $100?</h3>
+    <p>
+      A 30% discount on $100 saves you $30.
+      The final price is $70.
+    </p>
+
+    <h3>How do I find the final price after a discount?</h3>
+    <p>
+      Subtract the discount amount from the original price.
+      You can also multiply the original price by
+      (1 − discount percentage ÷ 100).
+    </p>
+
+    <h3>Can I calculate a 100% discount?</h3>
+    <p>
+      Yes. A 100% discount reduces the final price to zero.
+    </p>
+
+    <h3>Can I use this calculator with any currency?</h3>
+    <p>
+      Yes. Enter the numerical price in your preferred currency.
+      The calculator works with the amount you enter and does not
+      require a specific currency.
+    </p>
+
+    <h3>Does the calculator show how much money I save?</h3>
+    <p>
+      Yes. It displays the original price, discount percentage,
+      amount saved, and final price.
+    </p>
+
+    <h2>Explore More Free Online Tools</h2>
+
+    <ul>
+      <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+      <li><a href="cm-to-inches.html">CM to Inches Converter</a></li>
+      <li><a href="inches-to-cm.html">Inches to CM Converter</a></li>
+      <li><a href="lbs-to-kg.html">LBS to KG Converter</a></li>
+      <li><a href="kg-to-lbs.html">KG to LBS Converter</a></li>
+      <li><a href="celsius-fahrenheit.html">Celsius to Fahrenheit Converter</a></li>
+    </ul>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <strong>QuickTools</strong>
+      <p>Free online tools for everyday tasks.</p>
+    </div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
+  <div class="wrap copyright">
+    © 2026 QuickTools. All rights reserved.
+  </div>
+</footer>
+
+<script>
+function calculateDiscount() {
+  const priceInput = document.getElementById('price');
+  const discountInput = document.getElementById('discount');
+  const result = document.getElementById('result');
+
+  if (
+    priceInput.value.trim() === '' ||
+    discountInput.value.trim() === ''
+  ) {
+    result.textContent = 'Please enter both the original price and discount percentage.';
+    return;
+  }
+
+  const price = Number(priceInput.value);
+  const discount = Number(discountInput.value);
+
+  if (!Number.isFinite(price) || price < 0) {
+    result.textContent = 'Please enter a valid non-negative price.';
+    return;
+  }
+
+  if (!Number.isFinite(discount) || discount < 0 || discount > 100) {
+    result.textContent = 'Please enter a discount between 0 and 100.';
+    return;
+  }
+
+  const savings = price * (discount / 100);
+  const finalPrice = price - savings;
+
+  result.textContent =
+    `Original Price: ${price.toFixed(2)} | ` +
+    `Discount: ${discount}% | ` +
+    `You Save: ${savings.toFixed(2)} | ` +
+    `Final Price: ${finalPrice.toFixed(2)}`;
+}
+
+document.getElementById('price').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    calculateDiscount();
+  }
+});
+
+document.getElementById('discount').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    calculateDiscount();
+  }
+});
+</script>
+
 </body>
 </html>
