@@ -1,1 +1,223 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CM to Inches Converter | QuickTools</title><meta name="description" content="Convert centimeters to inches quickly with this free online length converter."><link rel="stylesheet" href="styles.css"></head><body><header><div class="wrap nav"><a class="brand" href="index.html">Quick<span>Tools</span></a><nav><a href="index.html#calculators">Calculators</a><a href="index.html#text">Text</a><a href="index.html#converters">Converters</a></nav></div></header><main><section class="wrap section" style="padding-top:55px"><p class="eyebrow">FREE ONLINE TOOL</p><h1>CM to Inches</h1><p style="color:#697589">Convert centimeters to inches.</p><div style="background:#fff;border:1px solid #e5e9f0;border-radius:18px;padding:24px;max-width:760px;margin-top:25px"><input id="x" type="text" inputmode="decimal" placeholder="Enter value" style="width:100%;padding:13px;border:1px solid #dbe1eb;border-radius:10px;font-size:16px"><br><br><button onclick="c()" style="padding:13px 18px;border:0;border-radius:10px;background:#4f46e5;color:#fff;font-weight:700;cursor:pointer">Convert</button><div id="r" style="margin-top:16px;padding:14px;border-radius:10px;background:#f1f3ff;font-weight:700"></div></div><script>function c(){let x=+document.getElementById('x').value;document.getElementById('r').textContent=isFinite(x)?`${x} → ${(x/2.54).toFixed(4)}`:'Enter a valid number.'}</script></section><section class="seo-content wrap"><h2>About the CM to Inches Converter</h2><p>Enter a measurement in centimeters to convert it to inches. The standard conversion is 1 inch = 2.54 centimeters.</p><p>For example, 10 centimeters equals approximately 3.937 inches.</p><h2>Frequently Asked Question</h2><h3>How many inches are in 1 centimeter?</h3><p>One centimeter is approximately 0.3937 inches.</p></section></main><footer class="site-footer"><div class="wrap footer-inner"><div><strong>QuickTools</strong><p>Free online tools for everyday tasks.</p></div><div class="footer-links"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div><div class="wrap copyright">© 2026 QuickTools. All rights reserved.</div></footer></body></html>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CM to Inches Converter | QuickTools</title>
+  <meta name="description" content="Convert centimeters to inches instantly with this free CM to inches calculator. Explore common measurements, conversion examples, and the simple formula.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Quick<span>Tools</span></a>
+    <nav>
+      <a href="index.html#calculators">Calculators</a>
+      <a href="index.html#text">Text</a>
+      <a href="index.html#converters">Converters</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="wrap section">
+    <p class="eyebrow">FREE ONLINE TOOL</p>
+    <h1>CM to Inches Converter</h1>
+    <p>
+      Convert centimeters (cm) to inches (in) quickly and accurately.
+      Enter any measurement to get your result instantly.
+    </p>
+
+    <div class="panel">
+      <label for="cm"><strong>Length in Centimeters (cm)</strong></label>
+
+      <input
+        id="cm"
+        type="number"
+        step="any"
+        min="0"
+        placeholder="Enter centimeters, e.g. 30"
+        style="width:100%;margin:10px 0 15px"
+      >
+
+      <button type="button" onclick="convertLength()">
+        Convert to Inches
+      </button>
+
+      <div id="result" class="result" aria-live="polite">
+        Your result will appear here.
+      </div>
+    </div>
+  </section>
+
+  <section class="seo-content wrap">
+
+    <h2>How to Convert Centimeters to Inches</h2>
+
+    <p>
+      Centimeters and inches are units used to measure length.
+      Centimeters belong to the metric system, while inches are part
+      of the imperial measurement system. Converting between them
+      is useful when comparing measurements from different countries.
+    </p>
+
+    <p>
+      To convert centimeters to inches, divide the measurement in
+      centimeters by 2.54. The result is the equivalent length in inches.
+    </p>
+
+    <h2>CM to Inches Conversion Formula</h2>
+
+    <p><strong>Inches = Centimeters ÷ 2.54</strong></p>
+
+    <p>For example, to convert 30 cm into inches:</p>
+
+    <ul>
+      <li>Start with 30 centimeters.</li>
+      <li>Divide 30 by 2.54.</li>
+      <li>The result is approximately 11.81 inches.</li>
+    </ul>
+
+    <h2>Common Centimeters to Inches Conversions</h2>
+
+    <p>
+      This table shows common centimeter measurements and their
+      approximate equivalents in inches.
+    </p>
+
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;margin:18px 0">
+        <thead>
+          <tr style="background:#eef0ff">
+            <th style="padding:12px;border:1px solid #dce3ff;text-align:left">Centimeters</th>
+            <th style="padding:12px;border:1px solid #dce3ff;text-align:left">Inches</th>
+            <th style="padding:12px;border:1px solid #dce3ff;text-align:left">Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">1 cm</td><td style="padding:11px;border:1px solid #e5e9f0">0.39 in</td><td style="padding:11px;border:1px solid #e5e9f0">Small measurement</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">5 cm</td><td style="padding:11px;border:1px solid #e5e9f0">1.97 in</td><td style="padding:11px;border:1px solid #e5e9f0">Small object</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">10 cm</td><td style="padding:11px;border:1px solid #e5e9f0">3.94 in</td><td style="padding:11px;border:1px solid #e5e9f0">Short length</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">15 cm</td><td style="padding:11px;border:1px solid #e5e9f0">5.91 in</td><td style="padding:11px;border:1px solid #e5e9f0">Ruler length</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">20 cm</td><td style="padding:11px;border:1px solid #e5e9f0">7.87 in</td><td style="padding:11px;border:1px solid #e5e9f0">Small notebook</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">25 cm</td><td style="padding:11px;border:1px solid #e5e9f0">9.84 in</td><td style="padding:11px;border:1px solid #e5e9f0">Object measurement</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">30 cm</td><td style="padding:11px;border:1px solid #e5e9f0">11.81 in</td><td style="padding:11px;border:1px solid #e5e9f0">Standard ruler</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">50 cm</td><td style="padding:11px;border:1px solid #e5e9f0">19.69 in</td><td style="padding:11px;border:1px solid #e5e9f0">Medium length</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">100 cm</td><td style="padding:11px;border:1px solid #e5e9f0">39.37 in</td><td style="padding:11px;border:1px solid #e5e9f0">One meter</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>When Is CM to Inches Conversion Useful?</h2>
+
+    <p>
+      Converting centimeters to inches is helpful when shopping online,
+      checking product dimensions, measuring furniture, or comparing
+      clothing and accessory sizes.
+    </p>
+
+    <p>
+      For example, an international product listing may show a screen,
+      bag, or piece of furniture in centimeters, while another listing
+      uses inches. Converting the measurements makes comparison easier.
+    </p>
+
+    <h2>Understanding Inches and Centimeters</h2>
+
+    <p>
+      One inch is exactly equal to 2.54 centimeters. This means that
+      an inch is longer than a centimeter. The relationship is fixed,
+      so the same conversion formula works for small and large measurements.
+    </p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>How many inches are in 1 centimeter?</h3>
+    <p>
+      One centimeter is approximately 0.3937 inches.
+    </p>
+
+    <h3>How many inches are in 10 cm?</h3>
+    <p>
+      10 centimeters equal approximately 3.94 inches.
+    </p>
+
+    <h3>How many inches are in 30 cm?</h3>
+    <p>
+      30 centimeters equal approximately 11.81 inches.
+    </p>
+
+    <h3>How many inches are in 100 cm?</h3>
+    <p>
+      100 centimeters equal approximately 39.37 inches.
+    </p>
+
+    <h3>What is the exact formula for converting CM to inches?</h3>
+    <p>
+      Divide the centimeter value by 2.54. This gives the equivalent
+      measurement in inches.
+    </p>
+
+    <h2>Explore More Free Conversion Tools</h2>
+
+    <ul>
+      <li><a href="inches-to-cm.html">Inches to CM Converter</a></li>
+      <li><a href="celsius-fahrenheit.html">Celsius to Fahrenheit Converter</a></li>
+      <li><a href="lbs-to-kg.html">LBS to KG Converter</a></li>
+      <li><a href="kg-to-lbs.html">KG to LBS Converter</a></li>
+    </ul>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <strong>QuickTools</strong>
+      <p>Free online tools for everyday tasks.</p>
+    </div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
+  <div class="wrap copyright">
+    © 2026 QuickTools. All rights reserved.
+  </div>
+</footer>
+
+<script>
+function convertLength() {
+  const input = document.getElementById('cm');
+  const result = document.getElementById('result');
+
+  if (input.value.trim() === '') {
+    result.textContent = 'Please enter a measurement in centimeters.';
+    return;
+  }
+
+  const cm = Number(input.value);
+
+  if (!Number.isFinite(cm) || cm < 0) {
+    result.textContent = 'Please enter a valid non-negative number.';
+    return;
+  }
+
+  const inches = cm / 2.54;
+
+  result.textContent =
+    `${cm} cm = ${Number(inches.toFixed(2))} inches`;
+}
+
+document.getElementById('cm').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    convertLength();
+  }
+});
+</script>
+
+</body>
+</html>
