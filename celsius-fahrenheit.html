@@ -1,1 +1,189 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Celsius to Fahrenheit Converter | QuickTools</title><meta name="description" content="Convert Celsius temperatures to Fahrenheit quickly with this free temperature converter."><link rel="stylesheet" href="styles.css"></head><body><header><div class="wrap nav"><a class="brand" href="index.html">Quick<span>Tools</span></a><nav><a href="index.html#calculators">Calculators</a><a href="index.html#text">Text</a><a href="index.html#converters">Converters</a></nav></div></header><main><section class="wrap section" style="padding-top:55px"><p class="eyebrow">FREE ONLINE TOOL</p><h1>Celsius to Fahrenheit</h1><p style="color:#697589">Convert Celsius to Fahrenheit.</p><div style="background:#fff;border:1px solid #e5e9f0;border-radius:18px;padding:24px;max-width:760px;margin-top:25px"><input id="x" type="text" inputmode="decimal" placeholder="Enter value" style="width:100%;padding:13px;border:1px solid #dbe1eb;border-radius:10px;font-size:16px"><br><br><button onclick="c()" style="padding:13px 18px;border:0;border-radius:10px;background:#4f46e5;color:#fff;font-weight:700;cursor:pointer">Convert</button><div id="r" style="margin-top:16px;padding:14px;border-radius:10px;background:#f1f3ff;font-weight:700"></div></div><script>function c(){let x=+document.getElementById('x').value;document.getElementById('r').textContent=isFinite(x)?`${x} → ${(x*9/5+32).toFixed(4)}`:'Enter a valid number.'}</script></section><section class="seo-content wrap"><h2>About the Celsius to Fahrenheit Converter</h2><p>Enter a temperature in Celsius to convert it to Fahrenheit. The formula is °F = (°C × 9/5) + 32.</p><p>For example, 0°C is 32°F and 100°C is 212°F.</p><h2>Frequently Asked Question</h2><h3>What is the Celsius to Fahrenheit formula?</h3><p>Multiply the Celsius temperature by 9/5 and then add 32.</p></section></main><footer class="site-footer"><div class="wrap footer-inner"><div><strong>QuickTools</strong><p>Free online tools for everyday tasks.</p></div><div class="footer-links"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div><div class="wrap copyright">© 2026 QuickTools. All rights reserved.</div></footer></body></html>
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Celsius to Fahrenheit Converter | QuickTools</title>
+  <meta name="description" content="Convert Celsius to Fahrenheit instantly. Use the free temperature converter, formula, examples, and common temperature reference chart.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Quick<span>Tools</span></a>
+    <nav>
+      <a href="index.html#calculators">Calculators</a>
+      <a href="index.html#text">Text</a>
+      <a href="index.html#converters">Converters</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="wrap section">
+    <p class="eyebrow">FREE ONLINE TOOL</p>
+    <h1>Celsius to Fahrenheit Converter</h1>
+    <p>Convert temperatures from Celsius (°C) to Fahrenheit (°F) instantly with this simple and free temperature converter.</p>
+
+    <div class="panel">
+      <label for="celsius"><strong>Temperature in Celsius (°C)</strong></label>
+      <input
+        id="celsius"
+        type="number"
+        step="any"
+        placeholder="Enter Celsius, e.g. 25"
+        style="width:100%;margin:10px 0 15px"
+      >
+
+      <button type="button" onclick="convertTemperature()">Convert to Fahrenheit</button>
+
+      <div id="result" class="result" aria-live="polite">
+        Your Fahrenheit result will appear here.
+      </div>
+    </div>
+  </section>
+
+  <section class="seo-content wrap">
+
+    <h2>How to Convert Celsius to Fahrenheit</h2>
+    <p>
+      Celsius and Fahrenheit are two temperature scales used around the world.
+      Celsius is commonly used in most countries, while Fahrenheit is mainly
+      used in the United States.
+    </p>
+    <p>
+      To convert a temperature from Celsius to Fahrenheit, multiply the
+      Celsius value by 9/5 and then add 32.
+    </p>
+
+    <h2>Celsius to Fahrenheit Formula</h2>
+    <p><strong>°F = (°C × 9/5) + 32</strong></p>
+
+    <p>For example, to convert 25°C:</p>
+    <ul>
+      <li>Multiply 25 by 9/5 to get 45.</li>
+      <li>Add 32 to 45.</li>
+      <li>The result is 77°F.</li>
+    </ul>
+
+    <h2>Common Celsius to Fahrenheit Conversions</h2>
+    <p>
+      Use this reference table to quickly check common temperatures
+      without entering them into the calculator.
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Celsius (°C)</th>
+          <th>Fahrenheit (°F)</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>-10°C</td><td>14°F</td><td>Very cold weather</td></tr>
+        <tr><td>0°C</td><td>32°F</td><td>Water freezes</td></tr>
+        <tr><td>10°C</td><td>50°F</td><td>Cool weather</td></tr>
+        <tr><td>20°C</td><td>68°F</td><td>Mild room temperature</td></tr>
+        <tr><td>25°C</td><td>77°F</td><td>Warm day</td></tr>
+        <tr><td>30°C</td><td>86°F</td><td>Hot weather</td></tr>
+        <tr><td>37°C</td><td>98.6°F</td><td>Average human body temperature</td></tr>
+        <tr><td>100°C</td><td>212°F</td><td>Water boils at sea level</td></tr>
+      </tbody>
+    </table>
+
+    <h2>When Is Celsius to Fahrenheit Conversion Useful?</h2>
+    <p>
+      Temperature conversion is useful when checking weather forecasts,
+      following recipes, reading international instructions, or comparing
+      temperatures from different countries.
+    </p>
+    <p>
+      For example, a recipe from the United States may list an oven
+      temperature in Fahrenheit, while your oven uses Celsius.
+      Converting the temperature helps you follow the instructions correctly.
+    </p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>What is 20°C in Fahrenheit?</h3>
+    <p>20°C equals 68°F.</p>
+
+    <h3>What is 25°C in Fahrenheit?</h3>
+    <p>25°C equals 77°F.</p>
+
+    <h3>What is 30°C in Fahrenheit?</h3>
+    <p>30°C equals 86°F.</p>
+
+    <h3>What is 0°C in Fahrenheit?</h3>
+    <p>0°C equals 32°F, which is the freezing point of water.</p>
+
+    <h3>What is the easiest way to convert Celsius to Fahrenheit?</h3>
+    <p>
+      Use the formula (°C × 9/5) + 32, or enter the temperature
+      into the QuickTools converter above to calculate it instantly.
+    </p>
+
+    <h2>Explore More Free Conversion Tools</h2>
+    <ul>
+      <li><a href="cm-to-inches.html">CM to Inches Converter</a></li>
+      <li><a href="inches-to-cm.html">Inches to CM Converter</a></li>
+      <li><a href="lbs-to-kg.html">LBS to KG Converter</a></li>
+      <li><a href="kg-to-lbs.html">KG to LBS Converter</a></li>
+    </ul>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <strong>QuickTools</strong>
+      <p>Free online tools for everyday tasks.</p>
+    </div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
+  <div class="wrap copyright">
+    © 2026 QuickTools. All rights reserved.
+  </div>
+</footer>
+
+<script>
+function convertTemperature() {
+  const input = document.getElementById('celsius');
+  const result = document.getElementById('result');
+
+  if (input.value.trim() === '') {
+    result.textContent = 'Please enter a temperature in Celsius.';
+    return;
+  }
+
+  const celsius = Number(input.value);
+
+  if (!Number.isFinite(celsius)) {
+    result.textContent = 'Please enter a valid temperature.';
+    return;
+  }
+
+  const fahrenheit = (celsius * 9 / 5) + 32;
+
+  result.textContent =
+    `${celsius}°C = ${Number(fahrenheit.toFixed(2))}°F`;
+}
+
+document.getElementById('celsius').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    convertTemperature();
+  }
+});
+</script>
+
+</body>
+</html>
+```
