@@ -4,90 +4,276 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Percentage Calculator | QuickTools</title>
-  <meta name="description" content="Calculate percentages quickly with examples for finding a percentage of a number and understanding percentage calculations.">
+  <title>Percentage Calculator | Calculate Percentages Online | QuickTools</title>
+  <meta name="description" content="Calculate percentages quickly with this free percentage calculator. Find a percentage of any number with simple formulas, examples, and a reference chart.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="wrap nav">
-      <a class="brand" href="index.html">Quick<span>Tools</span></a>
-      <nav>
-        <a href="index.html#calculators">Calculators</a>
-        <a href="index.html#text">Text</a>
-        <a href="index.html#converters">Converters</a>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section class="wrap section">
-      <p class="eyebrow">FREE ONLINE TOOL</p>
-      <h1>Percentage Calculator</h1>
-      <p class="tool-description">Calculate a percentage of a number quickly and easily.</p>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Quick<span>Tools</span></a>
+    <nav>
+      <a href="index.html#calculators">Calculators</a>
+      <a href="index.html#text">Text</a>
+      <a href="index.html#converters">Converters</a>
+    </nav>
+  </div>
+</header>
 
-      <div class="panel percentage-panel">
-        <label for="p">Percentage (%)</label>
-        <input id="p" type="number" step="any" inputmode="decimal" placeholder="e.g. 20">
+<main>
+  <section class="wrap section">
+    <p class="eyebrow">FREE ONLINE TOOL</p>
+    <h1>Percentage Calculator</h1>
+    <p>
+      Find the percentage of any number quickly and accurately.
+      Enter a percentage and a number to calculate the result instantly.
+    </p>
 
-        <label for="n">Number</label>
-        <input id="n" type="number" step="any" inputmode="decimal" placeholder="e.g. 150">
+    <div class="panel">
+      <label for="p"><strong>Percentage (%)</strong></label>
 
-        <button type="button" onclick="calculatePercentage()">Calculate</button>
-        <div id="r" class="result" aria-live="polite">Your result will appear here.</div>
-      </div>
-    </section>
+      <input
+        id="p"
+        type="number"
+        step="any"
+        placeholder="Enter percentage, e.g. 20"
+        style="width:100%;margin:10px 0 15px"
+      >
 
-    <section class="seo-content wrap">
-      <h2>About the Percentage Calculator</h2>
-      <p>A percentage calculator helps you find a percentage of a number without doing the math by hand. Enter a percentage and a number above to get the result instantly.</p>
-      <p>To calculate a percentage manually, convert the percentage to a decimal and multiply it by the number. For example, 20% of 50 is 0.20 × 50 = 10.</p>
+      <label for="n"><strong>Number</strong></label>
 
-      <h2>Frequently Asked Questions</h2>
-      <h3>How do I calculate a percentage?</h3>
-      <p>Multiply the number by the percentage divided by 100. For example, 15% of 200 is 30.</p>
-    </section>
-  </main>
+      <input
+        id="n"
+        type="number"
+        step="any"
+        placeholder="Enter number, e.g. 150"
+        style="width:100%;margin:10px 0 15px"
+      >
 
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <div>
-        <strong>QuickTools</strong>
-        <p>Free online tools for everyday tasks.</p>
-      </div>
-      <div class="footer-links">
-        <a href="about.html">About</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
+      <button type="button" onclick="calculatePercentage()">
+        Calculate
+      </button>
+
+      <div id="result" class="result" aria-live="polite">
+        Your result will appear here.
       </div>
     </div>
-    <div class="wrap copyright">© 2026 QuickTools. All rights reserved.</div>
-  </footer>
+  </section>
 
-  <script>
-    function calculatePercentage() {
-      const percentInput = document.getElementById('p').value.trim();
-      const numberInput = document.getElementById('n').value.trim();
-      const result = document.getElementById('r');
+  <section class="seo-content wrap">
 
-      if (percentInput === '' || numberInput === '') {
-        result.textContent = 'Please enter both values.';
-        return;
-      }
+    <h2>How to Calculate a Percentage</h2>
 
-      const percent = Number(percentInput);
-      const number = Number(numberInput);
+    <p>
+      A percentage represents a number as a fraction of 100.
+      It is commonly used in shopping, school grades, financial
+      calculations, statistics, and everyday situations.
+    </p>
 
-      if (!Number.isFinite(percent) || !Number.isFinite(number)) {
-        result.textContent = 'Please enter valid numbers.';
-        return;
-      }
+    <p>
+      To find a percentage of a number, divide the percentage
+      by 100 and multiply the result by the original number.
+      This calculator performs the calculation automatically.
+    </p>
 
-      result.textContent = (percent * number / 100).toLocaleString(undefined, {
-        maximumFractionDigits: 8
-      });
-    }
-  </script>
+    <h2>Percentage Calculation Formula</h2>
+
+    <p><strong>Percentage of a Number = (Percentage ÷ 100) × Number</strong></p>
+
+    <p>For example, to calculate 20% of 150:</p>
+
+    <ul>
+      <li>Start with 20% and divide it by 100.</li>
+      <li>20 ÷ 100 = 0.20.</li>
+      <li>Multiply 0.20 by 150.</li>
+      <li>The result is 30.</li>
+    </ul>
+
+    <h2>Percentage Calculation Examples</h2>
+
+    <p>
+      Here are some common percentage calculations using
+      different numbers.
+    </p>
+
+    <ul>
+      <li>10% of 200 = 20</li>
+      <li>15% of 100 = 15</li>
+      <li>20% of 150 = 30</li>
+      <li>25% of 80 = 20</li>
+      <li>50% of 250 = 125</li>
+      <li>75% of 400 = 300</li>
+    </ul>
+
+    <h2>Percentage Reference Chart</h2>
+
+    <p>
+      This chart shows common percentages calculated from 100.
+    </p>
+
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;margin:18px 0">
+        <thead>
+          <tr style="background:#eef0ff">
+            <th style="padding:12px;border:1px solid #dce3ff;text-align:left">Percentage</th>
+            <th style="padding:12px;border:1px solid #dce3ff;text-align:left">Decimal</th>
+            <th style="padding:12px;border:1px solid #dce3ff;text-align:left">Value of 100</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">1%</td><td style="padding:11px;border:1px solid #e5e9f0">0.01</td><td style="padding:11px;border:1px solid #e5e9f0">1</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">5%</td><td style="padding:11px;border:1px solid #e5e9f0">0.05</td><td style="padding:11px;border:1px solid #e5e9f0">5</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">10%</td><td style="padding:11px;border:1px solid #e5e9f0">0.10</td><td style="padding:11px;border:1px solid #e5e9f0">10</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">15%</td><td style="padding:11px;border:1px solid #e5e9f0">0.15</td><td style="padding:11px;border:1px solid #e5e9f0">15</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">20%</td><td style="padding:11px;border:1px solid #e5e9f0">0.20</td><td style="padding:11px;border:1px solid #e5e9f0">20</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">25%</td><td style="padding:11px;border:1px solid #e5e9f0">0.25</td><td style="padding:11px;border:1px solid #e5e9f0">25</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">30%</td><td style="padding:11px;border:1px solid #e5e9f0">0.30</td><td style="padding:11px;border:1px solid #e5e9f0">30</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">40%</td><td style="padding:11px;border:1px solid #e5e9f0">0.40</td><td style="padding:11px;border:1px solid #e5e9f0">40</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">50%</td><td style="padding:11px;border:1px solid #e5e9f0">0.50</td><td style="padding:11px;border:1px solid #e5e9f0">50</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">75%</td><td style="padding:11px;border:1px solid #e5e9f0">0.75</td><td style="padding:11px;border:1px solid #e5e9f0">75</td></tr>
+          <tr><td style="padding:11px;border:1px solid #e5e9f0">100%</td><td style="padding:11px;border:1px solid #e5e9f0">1.00</td><td style="padding:11px;border:1px solid #e5e9f0">100</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Where Are Percentages Used?</h2>
+
+    <h3>Shopping and Discounts</h3>
+    <p>
+      Percentages help shoppers understand sale offers,
+      price reductions, and promotional deals. You can use
+      a percentage calculation to find how much a discount
+      represents of the original price.
+    </p>
+
+    <h3>School and Exam Results</h3>
+    <p>
+      Students and teachers use percentages to calculate
+      exam scores. For example, scoring 45 out of 50 points
+      represents 90% of the total marks.
+    </p>
+
+    <h3>Business and Finance</h3>
+    <p>
+      Businesses use percentages to calculate profit margins,
+      changes in sales, expenses, and financial ratios.
+    </p>
+
+    <h3>Everyday Calculations</h3>
+    <p>
+      Percentages are useful for comparing quantities,
+      understanding statistics, and working with proportions
+      in everyday tasks.
+    </p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>How do I calculate a percentage of a number?</h3>
+    <p>
+      Divide the percentage by 100 and multiply it by the number.
+      For example, 20% of 150 is 30.
+    </p>
+
+    <h3>What is 10% of 100?</h3>
+    <p>
+      10% of 100 is 10 because 10 divided by 100 and multiplied
+      by 100 equals 10.
+    </p>
+
+    <h3>What is 25% of 200?</h3>
+    <p>
+      25% of 200 is 50.
+    </p>
+
+    <h3>How do I convert a percentage to a decimal?</h3>
+    <p>
+      Divide the percentage by 100. For example, 25% becomes 0.25,
+      and 50% becomes 0.50.
+    </p>
+
+    <h3>Can a percentage be greater than 100?</h3>
+    <p>
+      Yes. A percentage can be greater than 100 when the value
+      represents more than the original whole.
+    </p>
+
+    <h3>Can I calculate a percentage of a decimal number?</h3>
+    <p>
+      Yes. Enter any decimal number into the calculator.
+      The calculation works with whole numbers and decimal values.
+    </p>
+
+    <h2>Explore More Free Online Calculators</h2>
+
+    <ul>
+      <li><a href="discount-calculator.html">Discount Calculator</a></li>
+      <li><a href="age-calculator.html">Age Calculator</a></li>
+      <li><a href="tip-calculator.html">Tip Calculator</a></li>
+      <li><a href="gpa-calculator.html">GPA Calculator</a></li>
+      <li><a href="grade-calculator.html">Grade Calculator</a></li>
+    </ul>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <strong>QuickTools</strong>
+      <p>Free online tools for everyday tasks.</p>
+    </div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
+  <div class="wrap copyright">
+    © 2026 QuickTools. All rights reserved.
+  </div>
+</footer>
+
+<script>
+function calculatePercentage() {
+  const percentageInput = document.getElementById('p');
+  const numberInput = document.getElementById('n');
+  const result = document.getElementById('result');
+
+  if (
+    percentageInput.value.trim() === '' ||
+    numberInput.value.trim() === ''
+  ) {
+    result.textContent = 'Please enter both the percentage and the number.';
+    return;
+  }
+
+  const percentage = Number(percentageInput.value);
+  const number = Number(numberInput.value);
+
+  if (!Number.isFinite(percentage) || !Number.isFinite(number)) {
+    result.textContent = 'Please enter valid numbers.';
+    return;
+  }
+
+  const answer = (percentage / 100) * number;
+
+  result.textContent =
+    `${percentage}% of ${number} = ${Number(answer.toFixed(2))}`;
+}
+
+document.getElementById('p').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    calculatePercentage();
+  }
+});
+
+document.getElementById('n').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    calculatePercentage();
+  }
+});
+</script>
+
 </body>
 </html>
-
